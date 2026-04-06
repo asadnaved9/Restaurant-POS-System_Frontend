@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { FaSearch } from "react-icons/fa";
 import OrderList from "./OrderList";
 // import { keepPreviousData, useQuery } from "@tanstack/react-query";
@@ -6,17 +6,17 @@ import OrderList from "./OrderList";
 // import { getOrders } from "../../https/index";
 
 const RecentOrders = () => {
-//   const { data: resData, isError } = useQuery({
-//     queryKey: ["orders"],
-//     queryFn: async () => {
-//       return await getOrders();
-//     },
-//     placeholderData: keepPreviousData,
-//   });
+  //   const { data: resData, isError } = useQuery({
+  //     queryKey: ["orders"],
+  //     queryFn: async () => {
+  //       return await getOrders();
+  //     },
+  //     placeholderData: keepPreviousData,
+  //   });
 
-//   if (isError) {
-//     enqueueSnackbar("Something went wrong!", { variant: "error" });
-//   }
+  //   if (isError) {
+  //     enqueueSnackbar("Something went wrong!", { variant: "error" });
+  //   }
 
   return (
     <div className="px-8 mt-6">
@@ -41,20 +41,20 @@ const RecentOrders = () => {
 
         {/* Order list */}
         <div className="mt-4 px-6 overflow-y-scroll h-[300px] scrollbar-hide">
-         <OrderList/>
-         <OrderList/>
-         <OrderList/>
-         <OrderList/>
-         <OrderList/>
-         <OrderList/>
-         <OrderList/>
-         <OrderList/>
-         <OrderList/>
-         <OrderList/>
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
         </div>
       </div>
     </div>
   );
 };
 
-export default RecentOrders
+export default RecentOrders;

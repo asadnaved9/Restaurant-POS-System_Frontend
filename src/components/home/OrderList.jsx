@@ -18,23 +18,18 @@ const OrderList = () => {
         </div>
 
         <h1 className="text-[#f6b100] font-semibold border border-[#f6b100] rounded-lg p-1">
-          Table No:3<FaLongArrowAltRight className="text-[#ababab] ml-2 inline" />
+          Table No:3
+          <FaLongArrowAltRight className="text-[#ababab] ml-2 inline" />
         </h1>
 
         <div className="flex flex-col items-end gap-2">
-          
-        
-              <p className="text-green-600 bg-[#2e4a40] px-2 py-1 rounded-lg">
-                <FaCheckDouble className="inline mr-2" /> Ready
-              </p>
-            
-          
-            
-              <p className="text-yellow-600 bg-[#4a452e] px-2 py-1 rounded-lg">
-                <FaCircle className="inline mr-2" /> Ready to Serve
-              </p>
-            
-          
+          <p className="text-green-600 bg-[#2e4a40] px-2 py-1 rounded-lg">
+            <FaCheckDouble className="inline mr-2" /> Ready
+          </p>
+
+          <p className="text-yellow-600 bg-[#4a452e] px-2 py-1 rounded-lg">
+            <FaCircle className="inline mr-2" /> Ready to Serve
+          </p>
         </div>
       </div>
     </div>
