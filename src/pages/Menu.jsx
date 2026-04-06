@@ -9,8 +9,7 @@ import Bill from "../components/menu/Bill";
 import { useSelector } from "react-redux";
 
 const Menu = () => {
-
-    const customerData = useSelector((state) => state.customer);
+  const customerData = useSelector((state) => state.customer);
 
   return (
     <section className="bg-[#1f1f1f] h-[calc(100vh-5rem)] overflow-hidden flex gap-3">
@@ -30,7 +29,9 @@ const Menu = () => {
                 <h1 className="text-md text-[#f5f5f5] font-semibold tracking-wide">
                   {customerData.customerName || "Customer Name"}
                 </h1>
-                <p className="text-xs text-[#ababab] font-medium">Table : {customerData.table || "N/A"}</p>
+                <p className="text-xs text-[#ababab] font-medium">
+                  Table : {customerData.table || "N/A"}
+                </p>
               </div>
             </div>
           </div>

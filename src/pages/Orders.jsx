@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import BottonNav from '../components/shared/BottomNav'
-import OrderCard from '../components/orders/OrderCard'
-import BackButton from '../components/shared/BackButton'
+import React, { useState } from "react";
+import BottonNav from "../components/shared/BottomNav";
+import OrderCard from "../components/orders/OrderCard";
+import BackButton from "../components/shared/BackButton";
 
 const Orders = () => {
   const [status, setStatus] = useState("all");
@@ -14,44 +14,56 @@ const Orders = () => {
             Orders
           </h1>
         </div>
-      <div className="flex items-center justify-around gap-4">
-          <button onClick={() => setStatus("all")} className={`text-[#ababab] text-lg ${status === "all" && "bg-[#383838] rounded-lg px-5 py-2"}  rounded-lg px-5 py-2 font-semibold`}>
+        <div className="flex items-center justify-around gap-4">
+          <button
+            onClick={() => setStatus("all")}
+            className={`text-[#ababab] text-lg ${status === "all" && "bg-[#383838] rounded-lg px-5 py-2"}  rounded-lg px-5 py-2 font-semibold`}
+          >
             All
           </button>
-          <button onClick={() => setStatus("progress")} className={`text-[#ababab] text-lg ${status === "progress" && "bg-[#383838] rounded-lg px-5 py-2"}  rounded-lg px-5 py-2 font-semibold`}>
+          <button
+            onClick={() => setStatus("progress")}
+            className={`text-[#ababab] text-lg ${status === "progress" && "bg-[#383838] rounded-lg px-5 py-2"}  rounded-lg px-5 py-2 font-semibold`}
+          >
             In Progress
           </button>
-          <button onClick={() => setStatus("ready")} className={`text-[#ababab] text-lg ${status === "ready" && "bg-[#383838] rounded-lg px-5 py-2"}  rounded-lg px-5 py-2 font-semibold`}>
+          <button
+            onClick={() => setStatus("ready")}
+            className={`text-[#ababab] text-lg ${status === "ready" && "bg-[#383838] rounded-lg px-5 py-2"}  rounded-lg px-5 py-2 font-semibold`}
+          >
             Ready
           </button>
-          <button onClick={() => setStatus("completed")} className={`text-[#ababab] text-lg ${status === "completed" && "bg-[#383838] rounded-lg px-5 py-2"}  rounded-lg px-5 py-2 font-semibold`}>
+          <button
+            onClick={() => setStatus("completed")}
+            className={`text-[#ababab] text-lg ${status === "completed" && "bg-[#383838] rounded-lg px-5 py-2"}  rounded-lg px-5 py-2 font-semibold`}
+          >
             Completed
           </button>
         </div>
       </div>
 
-      <div className='grid grid-cols-3 gap-3 px-16 py-4 overflow-y-scroll scrollbar-hide h-[calc(100vh-10rem)]'>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
-        <OrderCard/>
+      <div className="grid grid-cols-3 gap-3 px-16 py-4 overflow-y-scroll scrollbar-hide h-[calc(100vh-10rem)]">
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
       </div>
-      <BottonNav/>
+      <BottonNav />
     </section>
-  )
-}
+  );
+};
 
-export default Orders
+export default Orders;
