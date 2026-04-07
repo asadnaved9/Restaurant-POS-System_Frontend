@@ -32,11 +32,11 @@ const BottonNav = () => {
 
   const isActive = (path) => location.pathname === path;
 
-    const handleCreateOrder = () => {
+  const handleCreateOrder = () => {
     // send the data to store
-    dispatch(setCustomer({name, phone, guests: guestCount}));
+    dispatch(setCustomer({ name, phone, guests: guestCount }));
     navigate("/tables");
-  }
+  };
 
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-[#262626] p-2 h-16 flex justify-around">

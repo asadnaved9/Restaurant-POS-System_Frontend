@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 import { FaCheckDouble } from "react-icons/fa";
 import { FaCircle } from "react-icons/fa";
 
 const OrderCard = () => {
   return (
     <div className="w-[500px] bg-[#262626] p-4 rounded-lg mb-4">
-        <div className="flex items-center gap-5 mb-3">
+      <div className="flex items-center gap-5 mb-3">
         <button className="bg-[#f6b100] p-3 text-xl font-bold rounded-lg">
           AN
-        </button> 
+        </button>
         <div className="flex items-center justify-between w-[100%]">
           <div className="flex flex-col items-start gap-1">
             <h1 className="text-[#f5f5f5] text-lg font-semibold tracking-wide">
@@ -18,17 +18,14 @@ const OrderCard = () => {
             {/* <p className="text-[#ababab] text-sm">Table <FaLongArrowAltRight className="text-[#ababab] ml-2 inline" /> 1</p> */}
           </div>
           <div className="flex flex-col items-start gap-2">
-            
-              
-                <p className="text-green-600  px-2 py-1 rounded-lg">
-                  <FaCheckDouble className="inline mr-2" /> Ready
-                </p>
-                <p className="text-[#ababab] text-sm">
-                  <FaCircle className="inline mr-2 text-green-600" /> Ready to
-                  serve
-                </p>
-              
-{/*             
+            <p className="text-green-600  px-2 py-1 rounded-lg">
+              <FaCheckDouble className="inline mr-2" /> Ready
+            </p>
+            <p className="text-[#ababab] text-sm">
+              <FaCircle className="inline mr-2 text-green-600" /> Ready to serve
+            </p>
+
+            {/*             
               <>
                 <p className="text-yellow-600 bg-[#4a452e] px-2 py-1 rounded-lg">
                   <FaCircle className="inline mr-2" /> Preparing
@@ -37,7 +34,6 @@ const OrderCard = () => {
                   <FaCircle className="inline mr-2 text-yellow-600" /> Preparing your order
                 </p>
               </> */}
-            
           </div>
         </div>
       </div>
@@ -51,7 +47,7 @@ const OrderCard = () => {
         <p className="text-[#f5f5f5] text-lg font-semibold">₹1,250</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default OrderCard
+export default OrderCard;
